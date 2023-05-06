@@ -41,7 +41,7 @@ html {
     font-family: GilroyBold,sans-serif;
 }
 
-.menu_item:first-child {
+.menu_link:active {
     color: black;
     font-weight: 700;
 }
@@ -79,17 +79,47 @@ html {
     font-size: 16px;
 }
 
-.img_designer {
+.image-slider__wrapper{
+
+}
+.image-slider_slide{
+
+}
+
+.img_slider__image {
     margin-top: 50px;
 }
-
-.bold {
-    font-weight: bold;
-}
-
-.img_designer_about {
+.img_slider__image img {
     max-width: 100%;
 }
+
+.image-slider .swiper-button-prev::after,
+.image-slider .swiper-button-next::after{
+    color: #FFFFFF;
+    font-size: 50px;
+}
+
+.image-slider .swiper-pagination-bullet{
+    width: 10px;
+    height: 10px;
+    line-height: 10px;
+    font-size: 15px;
+    background-color: #FFFFFF;
+}
+
+.image-slider .swiper-pagination-fraction{
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+.image-slider .swiper-pagination-scrollbar-fill{
+    background-color: #FFFFFF;
+}
+.image-slider .swiper-pagination-scrollbar-drag{
+    background-color: #FFFFFF;
+}
+
+
 
 .img_designer_about img {
     display: block;
@@ -166,10 +196,15 @@ p {
 
 .skills_block_subtitle {
     padding: 23px 0 42px 0;
+    max-width: 70px;
     font-size: 14px;
     line-height: 17px;
     text-align: center;
     color: #828282;
+}
+
+.skills_block_subtitle:nth-child(2){
+max-width: 80px;
 }
 
 .portfolio {
@@ -263,12 +298,20 @@ p {
     background-color: black;
 }
 
+.contacts_btn button{
+    cursor: pointer;
+}
+
 .contacts_icons{
     display: flex;
     justify-content: space-between;
     max-width: 342px;
     margin: 0 auto;
     margin-top: 86px;
+}
+
+.contacts_icons .contacts_icons_img img:hover{
+   opacity: 0.8;
 }
 
 .contacts_text{
@@ -279,4 +322,6 @@ p {
     color: #828282;
     font-family: GilroyMedium,sans-serif;
 }
+
+
 

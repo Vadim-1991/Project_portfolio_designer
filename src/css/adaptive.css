@@ -86,4 +86,8 @@
     .contacts_btn button {
         width: 316px;
     }
+
+    .burger{
+        display: block;
+    }
 }

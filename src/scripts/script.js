@@ -15,3 +15,12 @@ new Swiper('.image-slider', {
     //Динамичесие булеты
     dynamicBullets: true,
 });
+
+
+$('#burger').click(function () {
+    $('#menu').css('display', 'block');
+});
+
+$('.close').click(function () {
+    $('#menu').css('display', 'none');
+});

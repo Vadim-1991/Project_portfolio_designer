@@ -33,6 +33,14 @@ html {
     border-bottom: 1px solid #828282;
 }
 
+.menu_list {
+    padding: 33px 0 32px 0;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    border-bottom: 1px solid #828282;
+}
+
 .menu_link {
     text-decoration: none;
     font-size: 18px;
@@ -43,7 +51,6 @@ html {
 
 .menu_link:active {
     color: black;
-    font-weight: 700;
 }
 
 .designer {
@@ -73,17 +80,21 @@ html {
     color: #070707;
 }
 
-.designer_block_ru_eng {
+.designer_block_ru_eng  {
+    display: flex;
+    flex-direction: column;
     writing-mode: vertical-lr;
-    transform: rotate(-180deg);
+    transform: rotate(90deg);
     font-size: 16px;
 }
 
-.image-slider__wrapper{
-
+.designer_block_ru_eng button{
+    cursor: pointer;
 }
-.image-slider_slide{
 
+.designer_block_ru_eng button{
+    border: none;
+    background-color: white;
 }
 
 .img_slider__image {
@@ -119,8 +130,6 @@ html {
     background-color: #FFFFFF;
 }
 
-
-
 .img_designer_about img {
     display: block;
     max-width: 943px;
@@ -153,10 +162,12 @@ p {
 
 .block_about_me_description_two {
     margin-top: 40px;
+    max-width: 485px;
 }
 
 .block_about_me_description_three {
     margin-top: 40px;
+    max-width: 485px;
 }
 
 .skills {
@@ -222,34 +233,37 @@ max-width: 80px;
 
 .portfolio_img_one {
     margin-top: 47px;
-    max-width: 100%;
+    max-width: 943px;
 }
 
 .portfolio_img_one img {
     display: block;
     margin: 0 auto;
+    max-width: 100%;
 }
 
 .portfolio_img_two {
     margin-top: 99px;
-    max-width: 100%;
+    max-width: 943px;
 }
 
 .portfolio_img_two img {
     display: block;
     margin: 0 auto;
+    max-width: 100%;
+
 }
 
 .portfolio_img_three {
     margin-top: 99px;
-    max-width: 100%;
+    max-width: 943px;
 }
 
 .portfolio_img_three img {
     display: block;
     margin: 0 auto;
+    max-width: 100%;
 }
-
 
 .portfolio_subtitle {
     margin-top: 45px;
@@ -323,5 +337,67 @@ max-width: 80px;
     font-family: GilroyMedium,sans-serif;
 }
 
+.pop-up-menu-block {
+    width: 375px;
+    height: 460px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    background: #FFFFFF;
+}
+
+.close {
+    display: block;
+    width: 20px;
+    height: 20px;
+    fill: #828282;
+    position: absolute;
+    top: 50px;
+    left: 306px;
+}
+
+.pop-up-menu {
+    padding: 30px 20px 0 26px;
+    list-style: none;
+    line-height: 60px;
+}
 
 
+.pop-up-menu-link:active {
+    color: black;
+}
+
+.pop-up-menu-link {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 25px;
+    font-family: "MuseosanscyrlLight", sans-serif;
+    color: #828282;
+}
+
+.designer_block_ru_eng_pop-up{
+    display: flex;
+    font-size: 20px;
+    flex-direction: column;
+    writing-mode: vertical-lr;
+    transform: rotate(90deg);
+    position: absolute;
+    bottom: 75px;
+    right: 0;
+}
+
+.designer_block_ru_eng_pop-up button{
+    cursor: pointer;
+}
+
+.designer_block_ru_eng_pop-up button{
+    border: none;
+    background-color: white;
+}
+
+.burger{
+    position: absolute;
+    top: 40px;
+    right: 25px;
+}

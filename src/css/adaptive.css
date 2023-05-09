@@ -50,13 +50,11 @@
     }
 }
 
-@media (max-width: 430px) {
+@media (max-width: 460px) {
     .menu {
         display: none;
     }
-}
 
-@media (max-width: 375px) {
     .designer {
         padding: 10px 0 104px 0;
     }
